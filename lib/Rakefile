@@ -1,0 +1,5 @@
+require 'pg_view'
+path = File.expand_path(__dir__)
+Dir.glob("#{path}/tasks/**/*.rake").each do |file|
+  import file
+end
